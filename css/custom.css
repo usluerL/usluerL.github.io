@@ -140,6 +140,9 @@ a:hover {
 
 .quote {
   background: url(../img/manzara.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   padding: 20px 0px;
   margin-top: 120px; }
   .quote h1 {
