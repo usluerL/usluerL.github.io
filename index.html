@@ -212,11 +212,18 @@
     <script src="js/kube.min.js"></script>
     <script src="js/site.js"></script>
     <script>
-		function newTyped(){}$(function(){$("#typed").typed({
-		// Change to edit type effect
-		strings: ["Senior Software Engineer", "AWS Certified Developer", "Solution Designer"],
-
-		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+        $(function() {
+            $("#typed").typed({
+                strings: ["Senior Software Engineer"],
+                typeSpeed: 90,
+                backDelay: 700,
+                contentType: "html",
+                loop: false
+            });
+            $(".reset").click(function() {
+                $("#typed").typed("reset");
+            });
+        });
     </script>
 
 </body>
